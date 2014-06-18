@@ -1,0 +1,8 @@
+<div>
+    <h3 align="center">Topics</h3>
+    <p><a class="f-bu f-bu-default" href="#/add_topic">Add topic</a></p>
+    <p class="topic" ng-repeat="topic in topics">
+        <a href="#/topic_page/{{ topic.id }}">{{ topic.id }} {{ topic.text }}</a>
+        <input type="button" value="Delete topic" ng-click="delete(topic.id)" />
+    </p>
+</div>

@@ -1,0 +1,11 @@
+<div class="container">
+    <form align="center" name="newTopicForm">
+        <input type="text" name="input" ng-model="text" required id="new_topic" placeholder="topic name" />
+        <p class="error" ng-show="newTopicForm.input.$error.required">Required!</p>
+
+    </form>
+    <p align="center">
+        <input class="f-bu f-bu-success" type="button" value="Создать" ng-click="addTopic()" />
+        <input class="f-bu f-bu-warning" type="button" value="Назад" onclick="history.back()" />
+    </p>
+</div>
